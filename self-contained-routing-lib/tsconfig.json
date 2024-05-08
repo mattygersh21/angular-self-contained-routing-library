@@ -8,6 +8,12 @@
     "strict": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "internal-comp-routing-lib": [
+        "dist/internal-comp-routing-lib/internal-comp-routing-lib",
+        "dist/internal-comp-routing-lib"
+      ]
+    },
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
