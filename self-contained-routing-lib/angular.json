@@ -100,6 +100,37 @@
           }
         }
       }
+    },
+    "internal-comp-routing-lib": {
+      "projectType": "library",
+      "root": "projects/internal-comp-routing-lib",
+      "sourceRoot": "projects/internal-comp-routing-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/internal-comp-routing-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/internal-comp-routing-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/internal-comp-routing-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/internal-comp-routing-lib/src/test.ts",
+            "tsConfig": "projects/internal-comp-routing-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/internal-comp-routing-lib/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "self-contained-routing-lib"
