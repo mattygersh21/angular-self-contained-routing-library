@@ -1,6 +1,11 @@
 {
   "name": "internal-comp-routing-lib",
   "version": "0.0.1",
+  "description": "this is a library to test internal routing of a library and for future testing in an application that will enter the one or more of these components.",
+  "keywords": ["routing","internal-routing","internal-comp-routing"],
+  "author": {
+    "name": "Matthew G"
+  },
   "peerDependencies": {
     "@angular/common": "^12.2.0",
     "@angular/core": "^12.2.0"
